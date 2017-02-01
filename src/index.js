@@ -316,7 +316,7 @@ module.exports = React.createClass({
     }
 
     this.setState({
-      index: index,
+      index: Math.round(index),
       offset: offset,
     })
   },
