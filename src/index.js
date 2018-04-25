@@ -100,33 +100,6 @@ let styles = StyleSheet.create({
 // missing `module.exports = exports['default'];` with babel6
 // export default React.createClass({
 module.exports = React.createClass({
-
-  /**
-   * Props Validation
-   * @type {Object}
-   */
-  propTypes: {
-    horizontal                       : React.PropTypes.bool,
-    children                         : React.PropTypes.node.isRequired,
-    style                            : View.propTypes.style,
-    pagingEnabled                    : React.PropTypes.bool,
-    showsHorizontalScrollIndicator   : React.PropTypes.bool,
-    showsVerticalScrollIndicator     : React.PropTypes.bool,
-    bounces                          : React.PropTypes.bool,
-    scrollsToTop                     : React.PropTypes.bool,
-    removeClippedSubviews            : React.PropTypes.bool,
-    automaticallyAdjustContentInsets : React.PropTypes.bool,
-    showsPagination                  : React.PropTypes.bool,
-    showsButtons                     : React.PropTypes.bool,
-    loop                             : React.PropTypes.bool,
-    autoplay                         : React.PropTypes.bool,
-    autoplayTimeout                  : React.PropTypes.number,
-    autoplayDirection                : React.PropTypes.bool,
-    index                            : React.PropTypes.number,
-    renderPagination                 : React.PropTypes.func,
-    onScroll                         : React.PropTypes.func,
-  },
-
   mixins: [TimerMixin],
 
   /**
